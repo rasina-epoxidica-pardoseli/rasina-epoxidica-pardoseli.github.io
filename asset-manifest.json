@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.45602550.css",
-    "main.js": "/static/js/main.ad297a2e.js",
+    "main.css": "/static/css/main.1e77076a.css",
+    "main.js": "/static/js/main.f611a270.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
-    "static/media/1.jpeg": "/static/media/1.55bc721ee24089ca8dbd.jpeg",
-    "static/media/5.jpeg": "/static/media/5.b22df40557ce3659b1c4.jpeg",
-    "static/media/2.jpeg": "/static/media/2.d20e1b3dfe0cca2a3219.jpeg",
-    "static/media/7.jpeg": "/static/media/7.e83564677b7644335246.jpeg",
-    "static/media/4.jpeg": "/static/media/4.8376f23bcfa605a17b70.jpeg",
-    "static/media/9.jpeg": "/static/media/9.615f98148edcd667c30e.jpeg",
-    "static/media/6.jpeg": "/static/media/6.6691f189ac1557996d5c.jpeg",
+    "static/media/1.jpeg": "/static/media/1.f280c0aa384511620b3f.jpeg",
+    "static/media/5.jpeg": "/static/media/5.9b9201c11b53fd71a7a7.jpeg",
+    "static/media/2.jpeg": "/static/media/2.712a597630a40244e952.jpeg",
+    "static/media/7.jpeg": "/static/media/7.fbb28615b55bf0485ffe.jpeg",
+    "static/media/4.jpeg": "/static/media/4.364f7e4906a08eea6105.jpeg",
+    "static/media/6.jpeg": "/static/media/6.dcc4f2c9535212ccf815.jpeg",
     "static/media/3.jpeg": "/static/media/3.ff0fd97518ae07bb39a7.jpeg",
     "static/media/8.jpeg": "/static/media/8.2089a5e5131ef9e7e54f.jpeg",
     "static/media/hala-industriala.jpeg": "/static/media/hala-industriala.a456c6e3457512c35108.jpeg",
+    "static/media/9.jpeg": "/static/media/9.66fcca4bab75167009f7.jpeg",
     "static/media/parcari.jpeg": "/static/media/parcari.7b9cf79bbbf330f5a7db.jpeg",
     "static/media/logo_with_text.png": "/static/media/logo_with_text.d65a1c40a2f45401fb5a.png",
     "static/media/marcaje.jpeg": "/static/media/marcaje.97298c5668ba99eca0eb.jpeg",
@@ -21,12 +21,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.45602550.css.map": "/static/css/main.45602550.css.map",
-    "main.ad297a2e.js.map": "/static/js/main.ad297a2e.js.map",
+    "main.1e77076a.css.map": "/static/css/main.1e77076a.css.map",
+    "main.f611a270.js.map": "/static/js/main.f611a270.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45602550.css",
-    "static/js/main.ad297a2e.js"
+    "static/css/main.1e77076a.css",
+    "static/js/main.f611a270.js"
   ]
 }
