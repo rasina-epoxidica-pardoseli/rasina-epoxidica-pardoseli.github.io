@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9e009811.css",
-    "main.js": "/static/js/main.74c6bedd.js",
+    "main.js": "/static/js/main.be91056f.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/video.mp4": "/static/media/video.ea4ada70db1f73175aa9.mp4",
     "static/media/1.jpeg": "/static/media/1.f280c0aa384511620b3f.jpeg",
@@ -17,8 +17,8 @@
     "static/media/9.jpeg": "/static/media/9.66fcca4bab75167009f7.jpeg",
     "static/media/parcari.jpeg": "/static/media/parcari.7b9cf79bbbf330f5a7db.jpeg",
     "static/media/logo_with_text.png": "/static/media/logo_with_text.d65a1c40a2f45401fb5a.png",
-    "static/media/marcaje.jpeg": "/static/media/marcaje.97298c5668ba99eca0eb.jpeg",
     "static/media/logo_with_text_purple.png": "/static/media/logo_with_text_purple.2095cb1b827c13e2475c.png",
+    "static/media/marcaje.jpeg": "/static/media/marcaje.364f7e4906a08eea6105.jpeg",
     "static/media/leroymerlin.png": "/static/media/leroymerlin.fb428db4614011cda991.png",
     "static/media/totaltoolslogo.png": "/static/media/totaltoolslogo.20749a54aa6723b61307.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -27,11 +27,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.9e009811.css.map": "/static/css/main.9e009811.css.map",
-    "main.74c6bedd.js.map": "/static/js/main.74c6bedd.js.map",
+    "main.be91056f.js.map": "/static/js/main.be91056f.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e009811.css",
-    "static/js/main.74c6bedd.js"
+    "static/js/main.be91056f.js"
   ]
 }
