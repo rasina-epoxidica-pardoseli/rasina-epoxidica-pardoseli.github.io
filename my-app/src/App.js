@@ -16,43 +16,47 @@ import Article2 from "./blog/Article2";
 import Article3 from "./blog/Article3";
 import ClientiPage from "./pages/clienti";
 import BackToTopButton from "./components/BackToTop"
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 
 
 function App() {
-    const [activePage, setActivePage] = useState(window.location.hash.substring(1) || 'acasa');
-    const handleNavigation = (newPage) => {
-        setActivePage(newPage);
-        window.location.hash = newPage;
-    };
+    const location = useLocation();
+    const activePage = location.pathname.substring(1) || '/';
 
     useEffect(() => {
-        setTimeout(function() {
+        setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, 100)
-    }, [activePage]);
+        }, 10);
+    }, [location]);
 
     return (
         <div className="App overflow-hidden">
             <TopHeader />
-            <Menu onNavigation={handleNavigation} />
-            <div className="content-container transition-opacity duration-300 ease-in-out">
-                {activePage === 'acasa' && <HomePage onNavigation={handleNavigation} className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'acasa'} />}
-                {activePage === 'despre' && <AboutPage className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'despre'} />}
-                {activePage === 'contact' && <ContactPage className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'contact'} />}
-                {activePage === 'clienti' && <ClientiPage className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'clienti'} />}
-                {activePage === 'blog' && <BlogPage onNavigation={handleNavigation} className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'blog'} />}
-                {activePage === 'hale-industriale' && <HaleIndustrialePage onNavigation={handleNavigation} className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'hale-industriale'} />}
-                {activePage === 'terase-exterioare' && <TeraseExterioarePage onNavigation={handleNavigation} className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'terase-exterioare'} />}
-                {activePage === 'marcaje' && <MarcajePage onNavigation={handleNavigation} className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'marcaje'} />}
-                {activePage === 'parcari-garaje' && <ParcariGarajePage onNavigation={handleNavigation} className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'parcari-garaje'} />}
-                {activePage === 'rasina-epoxidica-pentru-pardoseli-industriale' && <Article1 className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'rasina-epoxidica-pentru-pardoseli-industriale'} />}
-                {activePage === 'trasarea-marcajelor-cu-rasina-epoxidica' && <Article2 className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'trasarea-marcajelor-cu-rasina-epoxidica'} />}
-                {activePage === 'pardoseala-garaj-rezistenta' && <Article3 className="opacity-0 transition-opacity duration-300 ease-in-out" hidden={activePage !== 'pardoseala-garaj-rezistenta'} />}
-            </div>
+            <Menu activePage={activePage} />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/despre" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/clienti" element={<ClientiPage />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/hale-industriale" element={<HaleIndustrialePage />} />
+                <Route path="/terase-exterioare" element={<TeraseExterioarePage />} />
+                <Route path="/marcaje" element={<MarcajePage />} />
+                <Route path="/parcari-garaje" element={<ParcariGarajePage />} />
+                <Route path="/rasina-epoxidica-pentru-pardoseli-industriale" element={<Article1 />} />
+                <Route path="/trasarea-marcajelor-cu-rasina-epoxidica" element={<Article2 />} />
+                <Route path="/pardoseala-garaj-rezistenta" element={<Article3 />} />
+            </Routes>
             <BackToTopButton />
-            <Footer onNavigation={handleNavigation} />
+            <Footer />
         </div>
     );
 }
 
-export default App;
+export default function AppWrapper() {
+    return (
+        <HashRouter>
+            <App />
+        </HashRouter>
+    )
+}

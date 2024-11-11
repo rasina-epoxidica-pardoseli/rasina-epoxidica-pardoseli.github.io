@@ -2,17 +2,18 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import logo_text from '../static/images/logo_with_text.png';
+import { Link } from 'react-router-dom';
 
 
-export default function Footer({onNavigation}) {
+export default function Footer() {
     return (
         <footer className="bg-gray-800 text-white py-8 px-4 mt-5 md:mt-10">
             <div className="container max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center">
 
                 {/* Logo */}
-                <a href="#acasa" onClick={() => onNavigation('acasa')} className="cursor-pointer logo w-40 mb-10 md:mb-0">
+                <Link to="/" className="cursor-pointer logo w-40 mb-10 md:mb-0">
                     <img src={logo_text} alt="Pardoseli epoxidice" />
-                </a>
+                </Link>
 
                 {/* Phone Number */}
                 <div className="flex items-center mb-10 md:mb-0">

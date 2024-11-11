@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function FadingSection({ title, description, buttonText, onNavigation }) {
+
+export default function FadingSection({ title, description, buttonText }) {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
 
@@ -32,9 +34,9 @@ export default function FadingSection({ title, description, buttonText, onNaviga
             <h2 className="text-3xl font-bold mb-2 pt-8 pb-4">
                 {title}
             </h2>
-            <button onClick={() => onNavigation("blog")} className="bg-primary-100 hover:bg-primary-500 text-white font-bold py-2 px-4 rounded">
+            <Link to={"blog"} role={"button"} className="bg-primary-100 hover:bg-primary-500 text-white font-bold py-2 px-4 rounded">
                 {buttonText}
-            </button>
+            </Link>
         </section>
     );
 }

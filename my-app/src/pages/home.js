@@ -10,7 +10,7 @@ import terase from "../static/images/terase_exterioare/1.jpeg"
 import parcari from "../static/images/blog/parcari.jpeg"
 
 
-export default function HomePage({ onNavigation }) {
+export default function HomePage() {
     return (
         <div className="content-home">
             <div className="overflow-hidden">
@@ -18,7 +18,6 @@ export default function HomePage({ onNavigation }) {
             </div>
             <div className={"servicii-container max-w-screen-lg mx-auto"}>
                 <SlidingContentRightVideo
-                    onNavigation={onNavigation}
                     url={"hale-industriale"}
                     visible={true}
                     id={"hale-industriale"}
@@ -27,7 +26,6 @@ export default function HomePage({ onNavigation }) {
                     title="Hale industriale"
                 />
                 <SlidingContentLeft
-                    onNavigation={onNavigation}
                     url={"parcari-garaje"}
                     visible={false}
                     id={"parcari-garaje"}
@@ -36,7 +34,6 @@ export default function HomePage({ onNavigation }) {
                     title="Parcări și garaje"
                 />
                 <SlidingContentRight
-                    onNavigation={onNavigation}
                     url={"terase-exterioare"}
                     visible={false}
                     id={"terase-exterioare"}
@@ -45,7 +42,6 @@ export default function HomePage({ onNavigation }) {
                     title="Terase exterioare"
                 />
                 <SlidingContentLeft
-                    onNavigation={onNavigation}
                     url={"marcaje"}
                     visible={false}
                     id={"marcaje"}
@@ -56,12 +52,11 @@ export default function HomePage({ onNavigation }) {
             </div>
             <div className={"blog"}>
                 <FadingSection
-                    onNavigation={onNavigation}
                     title="Află secretele noastre testate în practică"
                     description="În urma numeroaselor proiecte realizate..."
-                    buttonText="Citește mai multe soluții pe blogul nostru"
+                    buttonText="Citește mai multe soluții pe blog"
                 />
-                <ThreeItemSection onNavigation={onNavigation} />
+                <ThreeItemSection />
             </div>
         </div>
     )

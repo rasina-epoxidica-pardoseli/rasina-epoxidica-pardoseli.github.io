@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import videoPath from '../static/video.mp4'
+import {Link} from "react-router-dom";
 
 
-export default function SlidingContentRightVideo({ onNavigation, url, imagePath, title, description, id, visible }) {
+export default function SlidingContentRightVideo({url, imagePath, title, description, id, visible }) {
     const [isVisible, setIsVisible] = useState(visible || false);
 
     useEffect(() => {
@@ -27,9 +28,9 @@ export default function SlidingContentRightVideo({ onNavigation, url, imagePath,
             <div className="md:w-1/2 text-left md:pr-8 mb-4 md:mb-0">
                 <h2 className="text-3xl pb-6 font-bold mb-2 relative after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[3px] after:w-16 after:bg-primary-500">{title}</h2>
                 <p className="text-gray-600 pt-6 pb-6 mb-4">{description}</p>
-                <a href={"#"+url} role={"button"} onClick={() => onNavigation(url)} className="bg-primary-100 hover:bg-primary-500 text-white font-bold py-2 px-4 rounded">
+                <Link to={url} role={"button"} className="bg-primary-100 hover:bg-primary-500 text-white font-bold py-2 px-4 rounded">
                     Vezi detalii
-                </a>
+                </Link>
             </div>
             <div className="w-full md:w-1/2 mt-10 md:mt-0">
                 <div className="relative w-full h-72">

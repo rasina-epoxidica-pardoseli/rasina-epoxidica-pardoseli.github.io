@@ -46,7 +46,7 @@ export default function MultipleSlider({imageType}) {
         <div className="slide-wrapper relative w-full"> {/* Set max height for mobile and height for desktop */}
             <Slider {...settings}>
                 {images.map((image, index) => (
-                    <div className="custom-slide">
+                    <div className="custom-slide" key={index}>
                         <div
                             key={index}
                             className="relative h-40 md:h-40 xl:h-60 md:mx-1 bg-center bg-cover"
